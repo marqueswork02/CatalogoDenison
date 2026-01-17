@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultor Finch - Encontre Seu Lar Perfeito</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-content">
+                    <!-- Logo -->
+                    <div class="logo">
+                       <a href="#inicio" ><div class="logo-icon">CF</div></a>
+                        <span class="logo-text">Consultor Denison (Finch)</span>
+                    </div>
+
+                    <!-- Menu Button (Mobile) -->
+                    <button class="menu-toggle" id="menuToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+
+                    <!-- Desktop Menu -->
+                    <div class="nav-menu" id="navMenu">
+                        <a href="#catalogo" class="nav-link">Catálogo</a>
+                        <a href="#sobre-mim" class="nav-link">Sobre</a>
+                        <a href="#contato" class="nav-link">Contato</a>
+                        <a href="https://wa.me/5511995999282?text=Olá,%20vim%20pelo%20site%20e%20estou%20com%20dúvida."
+                                    target="_blank"
+                                    style="background:#25D366;color:#fff;padding:10px 15px;
+                                    text-decoration:none;border-radius:5px;">
+                                     Fale conosco no WhatsApp 💬
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+  
+    <!-- Hero Section com Slider -->
+    <section class="hero" id="inicio">
+        <div class="swiper heroSwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="images/hero-banner.jpg" alt="Edifício moderno" class="hero-image">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/apartment-showcase.jpg" alt="Apartamento moderno" class="hero-image">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/location-feature.jpg" alt="Localização premium" class="hero-image">
+                </div>
+            </div>
+           
+    
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="container">
+                <h1 class="hero-title">Encontre Seu Lar Perfeito</h1>
+                <p class="hero-subtitle">Imóveis modernos e de qualidade para sua família</p>
+                <a href="#catalogo" class="btn btn-secondary btn-large">Ver Catálogo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <div class="container">
+            <div class="search-container">
+                <form id="searchForm" class="search-form">
+                    <div class="search-group">
+                        <label for="searchLocation">Localização</label>
+                        <input type="text" id="searchLocation" placeholder="Ex: Butantã, São Paulo">
+                    </div>
+                    <div class="search-group">
+                        <label for="searchPrice">Preço Máximo</label>
+                        <select id="searchPrice">
+                            <option value="">Qualquer preço</option>
+                            <option value="300000">Até R$ 300.000</option>
+                            <option value="500000">Até R$ 500.000</option>
+                            <option value="700000">Até R$ 700.000</option>
+                            <option value="1000000">Até R$ 1.000.000</option>
+                        </select>
+                    </div>
+                    <div class="search-group">
+                        <label for="searchArea">Metragem Mínima</label>
+                        <select id="searchArea">
+                            <option value="">Qualquer metragem</option>
+                            <option value="50">A partir de 50m²</option>
+                            <option value="100">A partir de 100m²</option>
+                            <option value="150">A partir de 150m²</option>
+                            <option value="200">A partir de 200m²</option>
+                        </select>
+                    </div>
+                    <div class="search-group">
+                        <label for="searchBedrooms">Quartos</label>
+                        <select id="searchBedrooms">
+                            <option value="">Qualquer</option>
+                            <option value="1">1+ quarto</option>
+                            <option value="2">2+ quartos</option>
+                            <option value="3">3+ quartos</option>
+                            <option value="4">4+ quartos</option>
+                        </select>
+                    </div>
+                    <div class="search-actions">
+                        <button type="submit" class="btn btn-primary search-btn">
+                            <span>🔍 Pesquisar</span>
+                        </button>
+                        <button type="button" id="clearSearch" class="btn btn-outline clear-btn">
+                            Limpar
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catálogo Section -->
+    <section id="catalogo" class="catalog">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Nosso Catálogo</span>
+                <h2 class="section-title">Imóveis Disponíveis</h2>
+                <p class="section-description">Explore nossa seleção de imóveis modernos e bem localizados na região</p>
+            </div>
+
+            <!-- Properties Grid -->
+            <div class="properties-grid" id="propertiesGrid">
+                <!-- Cards serão inseridos aqui pelo JavaScript -->
+            </div>
+
+            <!-- Ver Mais Button -->
+            <div class="text-center">
+                <button class="btn btn-primary">Ver Mais Imóveis</button>
+            </div>
+        </div>
+    </section>
+
+
+          <p id="about"></p><br /><br />
+        <section class="about" alt="sobre-mim" id="sobre-mim">
+        <h2 class="title">SOBRE MIM</h2>
+
+        <div class="row">
+            <div class="container-image">
+                <img src="images/location-feature.jpg">
+            </div><br />
+            <div class="content">
+                <h3>Consultor Finch</h3>
+                <p>Meu nome é Denison sou consultor de imóveis e atuo no mercado imobiliário ajudando pessoas a realizarem negócios seguros, transparentes e alinhados às suas reais necessidades.<br>
+Acredito que cada imóvel representa muito mais do que uma negociação: ele envolve sonhos, conquistas e novos projetos de vida. Por isso, meu trabalho é baseado em um atendimento personalizado, entendendo o perfil de cada cliente para oferecer as melhores oportunidades, seja para compra, venda ou investimento.
+
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title text-center">Por que escolher a Imobiliária Lopes?</h2>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🏢</div>
+                    <h3 class="feature-title">Imóveis Selecionados</h3>
+                    <p class="feature-description">Todos os nossos imóveis passam por rigorosa seleção de qualidade</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">👥</div>
+                    <h3 class="feature-title">Atendimento Personalizado</h3>
+                    <p class="feature-description">Equipe dedicada para ajudar você a encontrar o imóvel ideal</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">📍</div>
+                    <h3 class="feature-title">Localização Premium</h3>
+                    <p class="feature-description">Imóveis em regiões bem desenvolvidas e com boa infraestrutura</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contato" class="cta">
+        <div class="container">
+            <h2 class="cta-title">Pronto para encontrar seu lar?</h2>
+            <p class="cta-subtitle">Entre em contato conosco e deixe que nossa equipe o ajude a encontrar o imóvel perfeito</p>
+            <button class="btn btn-secondary btn-large">Fale com um Consultor</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h4 class="footer-title">Imobiliária Lopes</h4>
+                    <p class="footer-text">Encontrando lares perfeitos desde 2020</p>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#catalogo">Catálogo</a></li>
+                        <li><a href="#sobre-mim">Sobre</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Contato</h4>
+                    <ul class="footer-links">
+                        <li> (11) 99599-9282</li>
+                        <li> contato@imobiliaria.com</li>
+                        <li> CRECI/SP 309054-F</li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Redes Sociais</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/1DciXUMzjH/?mibextid=wwXIfr">Facebook</a>
+                        <a href="https://www.instagram.com/consultor_finch_/">Instagram</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Imobiliária Lopes. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interest Modal -->
+    <div class="modal" id="interestModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Tenho Interesse</h2>
+                <button class="modal-close" id="modalClose">&times;</button>
+            </div>
+
+            <div class="modal-body">
+                <!-- Property Info -->
+                <div class="property-info" id="propertyInfo">
+                    <!-- Será preenchido pelo JavaScript -->
+                </div>
+
+                <!-- Form -->
+                <form id="interestForm" class="interest-form">
+                    <div class="form-group">
+                        <label for="name">Nome Completo *</label>
+                        <input type="text" id="name" name="name" placeholder="Seu nome" required>
+                        <span class="error-message" id="nameError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                        <span class="error-message" id="emailError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Telefone *</label>
+                        <input type="tel" id="phone" name="phone" placeholder="(11) 98765-4321" required>
+                        <span class="error-message" id="phoneError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Mensagem (Opcional)</label>
+                        <textarea id="message" name="message" placeholder="Deixe sua mensagem..." rows="3"></textarea>
+                    </div>
+
+                    <div class="form-buttons">
+                        <button type="button" class="btn btn-outline" id="cancelBtn">Cancelar</button>
+                        <button type="submit" class="btn btn-secondary">Enviar via WhatsApp</button>
+                    </div>
+
+                    <p class="form-info">Ao clicar em "Enviar via WhatsApp", você será redirecionado para conversar com nosso time</p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+</body>
+</html>
